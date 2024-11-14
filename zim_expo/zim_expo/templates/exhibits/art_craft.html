@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block culture %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Art and Craft</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Art/Craft</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+
+
+        <!-- Start Sample Area -->
+<section class="sample-text-area">
+    <div class="container">
+        <h3 class="text-heading title_color text-center">Discover Zimbabwe’s Rich Art and Cultural Heritage</h3>
+        <p class="sample-text">
+            Zimbabwe’s art and culture are vibrant reflections of its diverse heritage, telling the stories of its people, history and landscapes. 
+            From the intricate craftsmanship of Shona stone sculptures to the rhythmic energy of traditional dance and music, Zimbabwe’s cultural expressions are as unique as they are profound.
+        </p>
+    </div>
+</section>
+        <!-- End Sample Area -->
+
+                <!--================Breadcrumb Area =================-->
+                <section class="gallery_area section_gap">
+                    <div class="container">
+                        <div class="section_title text-center">
+                            <h2 class="title_color">A Tapestry of Tradition and Talent</h2>
+                        </div>
+                        <div class="row imageGallery1" id="gallery">
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/art.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/art.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/art-craft.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/art-craft.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/art-zim.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/art-zim.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/activity.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/activity.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/craft.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/craft.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/culture.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/culture.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/dance.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/dance.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/music.jpeg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/music.jpeg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 gallery_item">
+                                <div class="gallery_img">
+                                    <img src="{% static 'assets/img/zim-dance.jpg' %}" alt="">
+                                    <div class="hover">
+                                        <a class="light" href="{% static 'assets/img/zim-dance.jpg' %}"><i class="fa fa-expand"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--================Breadcrumb Area =================-->
+
+{% endblock %}

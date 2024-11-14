@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block live %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Tourism</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active">Tourism</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+         <!--================Breadcrumb Area =================-->
+
+         <div class="containers">
+            <!-- Header -->
+            <div class="headers">
+                <h1>Live Stream - Expo 2025 Zimbabwe Pavilion</h1>
+                <p>Watch the live event from Zimbabwe's Pavilion at Expo 2025, showcasing the country's culture, trade, and investment opportunities.</p>
+            </div>
+    
+            <!-- Live Stream Section -->
+            <div class="live-stream">
+                <h2>Live Streaming</h2>
+                <div class="video-container">
+                    <!-- Embed live streaming video (Replace with actual stream URL) -->
+                    <iframe src="https://www.youtube.com/embed/zzs-aaZxYAo" title="Expo 2025 Live Stream" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    
+                <div class="event-details">
+                    <h3>Event Information:</h3>
+                    <p>Welcome to the live stream of the Zimbabwe Pavilion at Expo 2025. Join us as we showcase our country's rich cultural heritage, trade and investment opportunities, and a bright future. Stay tuned for exciting presentations, performances, and discussions about Zimbabwe's progress and plans for 2030.</p>
+                    <p><strong>Event Schedule:</strong><br>Catch our live stream throughout Expo 2025, with scheduled sessions on various topics, including trade, tourism, investment opportunities, and more!</p>
+                </div>
+            </div>
+    
+            <!-- Chat Section -->
+            <div class="chat-section">
+                <h3>Live Chat</h3>
+                <div class="chat-box" id="chat-box">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+                <input type="text" id="chat-input" placeholder="Type your message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+
+       
+
+{% endblock %}

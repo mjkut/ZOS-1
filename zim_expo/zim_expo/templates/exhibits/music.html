@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block musicdance %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Music and Dance</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Music/Dance</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+
+
+        <hr>
+        <div class="text-center">
+            <h1>Traditional Music and Dance of Zimbabwe</h1>
+            <p>Explore the rich heritage of Zimbabwe's music and dance, showcasing various traditional performances that reflect the country’s diverse culture.</p>
+        </div>
+    
+        <section class="music-dance-section" id="mbira">
+            <h2>Mbira Music</h2>
+            <img src="{% static 'assets/img/music.jpeg' %}" alt="Mbira Instrument">
+            <p>The Mbira, also known as the thumb piano, is one of Zimbabwe's most iconic traditional instruments. It consists of metal keys attached to a wooden board, and it is traditionally played by the Shona people.</p>
+            <audio controls>
+                <source src="{% static 'assets/img/sound/mbira.mp3' %}}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p>The Mbira is often played during ceremonies, rituals, and celebrations to connect with ancestors.</p>
+        </section>
+    
+        <section class="music-dance-section" id="amakondere">
+            <h2>Amakondere Dance</h2>
+            <img src="{% static 'assets/img/amakondere.jpg' %}}" alt="Amakondere Dance">
+            <p>Amakondere is a traditional dance that originated from the Matabele people, often performed during celebratory events. The dance is characterized by energetic movements and rhythmic drumming.</p>
+            <video width="600" controls>
+                <source src="{% static 'assets/img/sound/amakondere.mp4' %}" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+            <p>The dancers often wear colorful costumes and their movements are synchronized with drumming beats, creating an electrifying atmosphere.</p>
+        </section>
+    
+        <section class="music-dance-section" id="jiti">
+            <h2>Jiti Music and Dance</h2>
+            <img src="{% static 'assets/img/dance.jpg' %}" alt="Jiti Dance">
+            <p>Jiti is a popular Zimbabwean music genre and dance style that blends traditional rhythms with modern instruments. It is widely enjoyed at social gatherings and is known for its fast tempo and upbeat vibe.</p>
+            <audio controls>
+                <source src="{% static 'assets/img/sound/jiti.mp3' %}" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p>It is often accompanied by lively dancing and socializing, making it an essential part of Zimbabwean celebrations.</p>
+        </section>
+    
+
+{% endblock %}

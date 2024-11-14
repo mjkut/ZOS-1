@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Destination Map{% endblock %}
+
+{% block map %}
+
+ <!--================Breadcrumb Area =================-->
+ <section class="breadcrumb_area">
+    <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+    <div class="container">
+        <div class="page-cover text-center">
+            <h2 class="page-cover-tittle">Map</h2>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Map</li>
+            </ol>
+        </div>
+    </div>
+ </section>
+ <!--================Breadcrumb Area =================-->
+ <br>
+ <hr>
+
+ <div class="text-center">
+    <h1>Tourist Attractions in Zimbabwe</h1>
+    <p>Explore various tourist attractions across Zimbabwe with this interactive map.</p>
+ </div>
+<br>
+<br>
+<div id="map"></div>
+<br>
+<br>
+
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="{% static 'assets/js/map-data.js' %}"></script> <!-- External JavaScript file with map data -->
+
+{% endblock %}
+       

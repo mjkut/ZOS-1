@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load cms_tags %}
+
+{% load static %}
+
+{% block title %}News{% endblock %}
+
+{% block news %}
+
+<!--================Breadcrumb Area =================-->
+<section class="breadcrumb_area">
+    <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+    <div class="container">
+        <div class="page-cover text-center">
+            <h2 class="page-cover-tittle">Update on Osaka2025</h2>
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li class="active">News</li>
+            </ol>
+        </div>
+    </div>
+</section>
+ <!--================Breadcrumb Area =================-->
+
+ <div class="news-items">
+    {% for item in news_items %}
+    <div class="news-card">
+        <h3>{{ item.title }}</h3>
+        <p><strong>Posted on:</strong> {{ item.date_posted }}</p>
+        <p><strong>By:</strong> {{ item.author }}</p>
+        <p>{{ item.content }}</p>
+    </div>
+    {% empty %}
+    <p>No news available.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

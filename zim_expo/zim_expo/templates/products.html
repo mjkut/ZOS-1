@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load cms_tags %}
+
+{% load static %}
+
+{% block title %}Shop{% endblock %}
+
+{% block shop %}
+
+<!--================Breadcrumb Area =================-->
+<section class="breadcrumb_area">
+    <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+    <div class="container">
+        <div class="page-cover text-center">
+            <h2 class="page-cover-tittle">Commercial Shop</h2>
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Products</li>
+            </ol>
+        </div>
+    </div>
+</section>
+ <!--================Breadcrumb Area =================-->
+
+<div class="containerz">
+    <h1 class="section-title">Zimbabwean Cultural Products</h1>
+</div>
+
+
+<section class="shop_area">
+    <div class="container">
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-4">
+                <div class="product-card">
+                    <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.description }}</p>
+                    <p><strong>Price: </strong>${{ product.price }}</p>
+                    <p><strong>In stock: </strong>{{ product.stock }}</p>
+                </div>
+            </div>
+            {% empty %}
+            <p>No products available.</p>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

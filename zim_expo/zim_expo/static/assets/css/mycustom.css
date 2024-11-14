@@ -1,0 +1,901 @@
+/*Destinations css*/
+/* Basic styling for gallery and filter buttons */
+.province-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Button Base Styles */
+.genric-btns {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f0f0f0;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Color for Info Type */
+.genric-btns.infor {
+  background-color: #e7eceb;
+  color: #121111;
+}
+
+/* Hover Effect */
+.genric-btns.info:hover {
+  background-color: #d9eeeb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active Button State */
+.genric-btns.infor.active,
+.genric-btns.infor:focus {
+  background-color: #b6e5dd;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .province-filter {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .genric-btns {
+      width: 80%;
+      text-align: center;
+  }
+}
+  
+  /* Styling for the image gallery */
+  
+  
+  
+  .destination-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  .destination-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .destination-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .destination-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .destination-item:hover .overlay {
+    transition: bottom 2s, opacity 2s;
+    backface-visibility: hidden;
+    transform: translateZ(0)
+  }
+  
+  .overlay h3, .overlay p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .genric-btn {
+    padding: 5px 5px;  /* Reduce padding to make buttons smaller */
+    font-size: 8px;     /* Reduce font size */
+    margin: 2px 4px;     /* Adjust margin between buttons */
+    border-radius: 10px;  /* Optional: round the corners for a better appearance */
+  }
+  
+  /* Optional: If you want to apply this only to the province filter buttons */
+  .province-filter .genric-btn {
+    padding: 5px 10px;
+    font-size: 8px;
+    margin: 2px 4px;
+  }
+
+
+
+
+/*Music and dance*/
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Sections for each music/dance type */
+.music-dance-section {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.music-dance-section h2 {
+    color: #4CAF50;
+    font-size: 2em;
+    text-align: center;
+}
+
+.music-dance-section img {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.music-dance-section audio, .music-dance-section video {
+    display: block;
+    margin: 20px auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/*Map*/
+
+#map {
+    width: 70%;
+    height: 600px; /* Adjust height as needed */
+    border: 3px solid #4CAF50;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Interactive Media*/
+
+.containers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.headers {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #799279;
+  color: white;
+}
+
+.headers h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.headers p {
+  font-size: 1.2em;
+}
+
+/* Content Sections */
+.content-section {
+  margin: 40px 0;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  font-size: 1.8em;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Tech Features Section */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tech-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card h3 {
+  color: #006400;
+  font-size: 1.3em;
+}
+
+.tech-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.tech-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Call-to-Action */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 1.2em;
+}
+
+.cta a {
+  text-decoration: none;
+  color: white;
+  background-color: #006400;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 1.1em;
+}
+
+.cta a:hover {
+  background-color: #004d00;
+}
+
+/* Chatbot container */
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: 10%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.chat-container h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Input area styling */
+.chat-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Chat display area */
+.chat-display {
+  background-color: #f7f9fc;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.bot-message {
+  color: #333;
+}
+
+/* Main container to wrap the content */
+.schedule-container {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Container for event cards */
+.event-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Individual event card styling */
+.event-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for event cards */
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for event headings */
+.event-card h3 {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Styling for event details */
+.event-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Empty message styling */
+.event-card-container p {
+  color: #888;
+  font-style: italic;
+}
+
+/* Add event form container */
+.add-event-form {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.add-event-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button styling */
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .event-card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .event-card {
+      max-width: 100%;
+  }
+}
+
+
+/* Container and Section Styling */
+.containers {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.headers {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.headers h1 {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.headers p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Live Stream Section */
+.live-stream {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.live-stream h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.event-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.event-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Chat Section */
+.chat-section {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.chat-section h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#chat-input {
+  width: calc(100% - 80px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #FFD700;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #333;
+  color: #FFD700;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .headers h1 {
+      font-size: 2rem;
+  }
+
+  .breadcrumb_area .page-cover-tittle {
+      font-size: 2rem;
+  }
+
+  .live-stream h2, .chat-section h3 {
+      font-size: 1.5rem;
+  }
+
+  #chat-input {
+      width: calc(100% - 70px);
+  }
+
+  .video-container {
+      padding-bottom: 75%; /* 4:3 aspect ratio for smaller screens */
+  }
+}
+
+/*Investment*/
+.containerd {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #f0f0f0;
+  color: #000000;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  margin-top: 40px;
+  color: #0c0c0c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Overview Section */
+.overview p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+/* Key Sectors Section */
+.sectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.sector {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.sector:hover {
+  transform: translateY(-10px);
+}
+
+.sector h3 {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.sector p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Incentives Section */
+.incentives {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.incentives ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.incentives li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #302f2f;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact .cta-button {
+  background-color: #009688;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.contact .cta-button:hover {
+  background-color: #00796b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sectors {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sector {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Province Filter*/
+/* Container Styles */
+
+
+/*Our Future*/
+.containe {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.heade {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #5cd45c;
+  color: white;
+}
+
+.heade h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.heade p {
+  font-size: 1.2em;
+}
+
+/* Content Sections */
+.content-section {
+  margin: 40px 0;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  font-size: 1.8em;
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* UN Goals Section */
+.sdg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.sdg-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sdg-card h3 {
+  color: #006400;
+  font-size: 1.3em;
+}
+
+.sdg-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+
+/* Container for the news items */
+.news-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+/* Individual news card */
+.news-card {
+  background-color: #efeeee;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-left: 5px solid #4a90e2; /* Subtle accent color */
+  transition: transform 0.3s;
+  width: 40%;
+}
+
+/* Hover effect */
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.news-card h3 {
+  font-size: 1.5em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Meta information */
+.news-card p {
+  margin: 8px 0;
+  color: #1b1b1b;
+  line-height: 1.6;
+}
+
+/* Highlight for labels like "Posted on" and "By" */
+.news-card p strong {
+  color: #4a90e2;
+}
+
+/* Styling for the empty state */
+.news-items p {
+  color: #333232;
+  font-size: 1.2em;
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 30px;
+}
+
+/* Individual opportunity card */
+.opportunity-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #2a9d8f; /* Accent color */
+  transition: transform 0.3s;
+  width: 40%;
+}
+
+/* Hover effect for opportunity card */
+.opportunity-card:hover {
+  transform: scale(1.02);
+}
+
+/* Job title styling */
+.opportunity-card h3 {
+  font-size: 1.4em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Labels and content styling */
+.opportunity-card p {
+  margin: 8px 0;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Bold labels for job details */
+.opportunity-card p strong {
+  color: #2a9d8f;
+}
+
+/* Styling for empty state message */
+.opportunities p {
+  color: #888888;
+  font-size: 1.2em;
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 30px;
+}

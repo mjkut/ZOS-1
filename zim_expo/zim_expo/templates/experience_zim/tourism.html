@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Destinations{% endblock %}
+
+{% block tourism %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Tourism</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Tourism</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+
+        <!--================Destinations Area================-->
+        <section>
+            <div class="container">
+                <!-- destination_list.html -->
+
+                <div class="province-filters">
+                    <button data-province="all" class="genric-btns infor">All</button>
+                    <button data-province="Harare" class="genric-btns infor">Harare</button>
+                    <button data-province="Bulawayo" class="genric-btns infor">Bulawayo</button>
+                    <button data-province="Masvingo" class="genric-btns infor">Masvingo</button>
+                    <button data-province="Midlands" class="genric-btns infor">Midlands</button>
+                    <button data-province="Manicaland" class="genric-btns infor">Manicaland</button>
+                    <button data-province="mash_east" class="genric-btns infor">Mash East</button>
+                    <button data-province="mash_west" class="genric-btns infor">Mash West</button>
+                    <button data-province="mash_central" class="genric-btns infor">Mash Central</button>
+                    <button data-province="mat_north" class="genric-btns infor">Mat North</button>
+                    <button data-province="mat_south" class="genric-btns infor">Mat South</button>
+                    <!-- Add more province buttons as needed -->
+                </div>
+
+
+                <div class="destination-gallery">
+
+                    <!-- destination items for Harare -->
+                    <div class="destination-item" data-province="Harare">
+                        <img src="{% static 'assets/img/zim/art.jpeg' %}" alt="Harare Destination 1">
+                        <div >
+                            <h3>Harare National Gallery</h3>
+                            <p>Harare</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Harare">
+                        <img src="{% static 'assets/img/zim/heroes-acre.jpg' %}" alt="Harare Destination 2">
+                        <div >
+                            <h3>National Heroes Acre</h3>
+                            <p>Harare</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Harare">
+                        <img src="{% static 'assets/img/zim/mukuvisi.jpg' %}" alt="Harare Destination 3">
+                        <div>
+                            <h3>Mukuvisi Woodlands</h3>
+                            <p>Harare</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Harare">
+                        <img src="{% static 'assets/img/zim/kopje.jpeg' %}" alt="Harare Destination 4">
+                        <div >
+                            <h3>The Kopje</h3>
+                            <p>Harare</p>
+                        </div>
+                    </div>
+                
+                    <!-- destination items for Bulawayo -->
+                    <div class="destination-item" data-province="Bulawayo">
+                        <img src="{% static 'assets/img/zim/bulawayo.jpeg' %}" alt="Bulawayo Destination 1">
+                        <div>
+                            <h3>Bulawayo Railway Museum</h3>
+                            <p>Bulawayo</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Bulawayo">
+                        <img src="{% static 'assets/img/zim/natural.jpeg' %}" alt="Bulawayo Destination 2">
+                        <div>
+                            <h3>Natural History Meseum</h3>
+                            <p>Bulawayo</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Bulawayo">
+                        <img src="{% static 'assets/img/zim/lumene.jpg' %}" alt="Bulawayo Destination 3">
+                        <div>
+                            <h3>Lumene Falls</h3>
+                            <p>Discover the heritage of Zimbabwe's oldest railway station.</p>
+                        </div>
+                    </div>
+
+                    <!-- destination items for Masvingo -->
+                    <div class="destination-item" data-province="Masvingo">
+                        <img src="{% static 'assets/img/zim/mutirikwi.jpg' %}" alt="Masvingo Destination 1">
+                        <div>
+                            <h3>Lake Mutirikwi</h3>
+                            <p>Masvingo</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Masvingo">
+                        <img src="{% static 'assets/img/zim/Great-Zim.jpg' %}" alt="Masvingo Destination 2">
+                        <div>
+                            <h3>Great Zimbabwe</h3>
+                            <p>Masvingo</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Masvingo">
+                        <img src="{% static 'assets/img/zim/gonarezhou.jpg' %}" alt="Masvingo Destination 3">
+                        <div>
+                            <h3 >Gonarezhou National Park</h3>
+                            <p>Masvingo</p>
+                        </div>
+                    </div>
+
+                    <!-- destination items for Manicaland -->
+                    <div class="destination-item" data-province="Manicaland">
+                        <img src="{% static 'assets/img/zim/mtarazi.jpg' %}" alt="Manicaland Destination 1">
+                        <div>
+                            <h3>Mutarazi Falls</h3>
+                            <p>Eastern Highlands</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Manicaland">
+                        <img src="{% static 'assets/img/zim/bvumba.jpeg' %}" alt="Manicaland Destination 2">
+                        <div>
+                            <h3>Vumba Mountains</h3>
+                            <p>Manicaland</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Manicaland">
+                        <img src="{% static 'assets/img/zim/bridal.jpg' %}" alt="Manicaland Destination 3">
+                        <div>
+                            <h3>Bridal Veil Falls</h3>
+                            <p>Eastern Highlands</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Manicaland">
+                        <img src="{% static 'assets/img/zim/pungwe.jpg' %}" alt="Manicaland Destination 4">
+                        <div>
+                            <h3>Pungwe Falls</h3>
+                            <p>Eastern Highlands</p>
+                        </div>
+                    </div>
+                
+                    <!-- destination items for Mashonaland East -->
+                    <div class="destination-item" data-province="mash_east">
+                        <img src="{% static 'assets/img/zim/imire.jpg' %}" alt="Mash East Destination 1">
+                        <div>
+                            <h3>Imire Game Park</h3>
+                            <p>Mashonaland East</p>
+                        </div>
+                    </div>
+                
+
+                    <!-- destination items for Mashonaland West -->
+                    <div class="destination-item" data-province="mash_west">
+                        <img src="{% static 'assets/img/zim/hippo-family.jpg' %}" alt="Mash West Destination 1">
+                        <div>
+                            <h3>Mana Pools National Park</h3>
+                            <p>Mana Pools</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mash_west">
+                        <img src="{% static 'assets/img/zim/nzowu.jpeg' %}" alt="Mash West Destination 2">
+                        <div>
+                            <h3>Lake Kariba Recreational Park</h3>
+                            <p>Mashonaland West</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mash_west">
+                        <img src="{% static 'assets/img/zim/chinhoyi.jpg' %}" alt="Mash West Destination 3">
+                        <div>
+                            <h3>Chinhoyi Caves</h3>
+                            <p>Chinhoyi</p>
+                        </div>
+                    </div>
+
+                    <!-- destination items for Mashonaland Central -->
+                    <div class="destination-item" data-province="mash_central">
+                        <img src="{% static 'assets/img/zim/doshava.jpg' %}" alt="Mash Central Destination 1">
+                        <div>
+                            <h3>Domboshava Caves</h3>
+                            <p>Mashonaland Central</p>
+                        </div>
+                    </div>
+                
+                    
+
+                    <!-- destination items for Midlands -->
+                    <div class="destination-item" data-province="Midlands">
+                        <img src="{% static 'assets/img/zim/antelope.jpeg' %}" alt="Midlands Destination 1">
+                        <div>
+                            <h3>Antelope Park</h3>
+                            <p>Midlands</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="Midlands">
+                        <img src="{% static 'assets/img/zim/military.jpg' %}" alt="Midlands Destination 2">
+                        <div>
+                            <h3>Zimbabwe Military Meseum</h3>
+                            <p>Midlands</p>
+                        </div>
+                    </div>
+                    
+
+                    <!-- destination items for Matabeleland North -->
+                    <div class="destination-item" data-province="mat_north">
+                        <img src="{% static 'assets/img/zim/vicy.jpg' %}" alt="Mat North Destination 1">
+                        <div>
+                            <h3>Victoria Falls</h3>
+                            <p>Matabeleland North</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mat_north">
+                        <img src="{% static 'assets/img/zim/hwange-park.jpg' %}" alt="Mat North Destination 2">
+                        <div>
+                            <h3>Hwange National Park</h3>
+                            <p>Hwange</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mat_north">
+                        <img src="{% static 'assets/img/zim/zambezi.jpeg' %}" alt="Mat North Destination 3">
+                        <div>
+                            <h3>Zambezi National Park</h3>
+                            <p>Matabeleland North</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mat_north">
+                        <img src="{% static 'assets/img/zim/bridge.jpg' %}" alt="Mat North Destination 4">
+                        <div>
+                            <h3>Victoria Falls Bridge</h3>
+                            <p>Matabeleland North</p>
+                        </div>
+                    </div>
+                    
+
+                    <!-- destination items for Matabeleland South -->
+                    <div class="destination-item" data-province="mat_south">
+                        <img src="{% static 'assets/img/zim/threeways.jpg' %}" alt="Mat South Destination 1">
+                        <div>
+                            <h3>Threeways Safari</h3>
+                            <p>Matabeleland South</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mat_south">
+                        <img src="{% static 'assets/img/zim/estates.jpg' %}" alt="Mat South Destination 2">
+                        <div>
+                            <h3>Nottingham Estates</h3>
+                            <p>Matabeleland South</p>
+                        </div>
+                    </div>
+                    <div class="destination-item" data-province="mat_south">
+                        <img src="{% static 'assets/img/zim/gmtc.jpg' %}" alt="Mat South Destination 3">
+                        <div>
+                            <h3>The Great Mupungubwe Transfrontier Conservation Are</h3>
+                            <p>Matabeleland South</p>
+                        </div>
+                    </div>
+                    <!-- Repeat similar blocks for each destination and province -->
+                </div>
+            </div>
+        </section>
+        <!--================Destinations Area================-->
+
+<!--================ Facilities Area  =================-->
+<section class="facilities_area section_gap">
+    <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">  
+    </div>
+    <div class="container">
+        <div class="section_title text-center">
+            <h2 class="title_w">Amenities For Visitors</h2>
+        </div>
+        <div class="row mb_30">
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant &amp; Dining</h4>
+                    <p>Indulge in the rich flavors of Zimbabwean cuisine and international dishes at our diverse restaurants. 
+                        From fine dining to casual eateries, there’s something for every palate</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Bars &amp; Nightlife</h4>
+                    <p>Experience the vibrant nightlife in Zimbabwe! 
+                        Enjoy refreshing drinks and lively atmospheres at local bars and lounges</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pools</h4>
+                    <p>Relax and unwind in one of Zimbabwe’s many swimming pools. Whether at a luxury hotel or a local resort, you can enjoy a refreshing dip</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                    <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gyms &amp; Fitness Centers</h4>
+                    <p>Stay active while you travel! Zimbabwe boasts a variety of gyms and fitness centers equipped with modern facilities. 
+                        Many hotels also offer fitness amenities, allowing you to maintain your workout routine.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="facilities_item">
+                    <h4 class="sec_h4"><i class="lnr lnr-map-marker"></i>Guided Tours</h4>
+                    <p>Discover the beauty of Zimbabwe through guided tours led by experienced locals. From city tours to nature excursions, immerse yourself in the culture, history and natural wonders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Facilities Area  =================-->
+
+{% endblock %}

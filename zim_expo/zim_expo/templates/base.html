@@ -1,0 +1,72 @@
+{% load cms_tags sekizai_tags %}
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{% static 'assets/img/favicon.png' %}" type="image/png">
+        <title>{% block title %}Zimbabwe Expo{% endblock %}</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+        {% include 'styles.html' %}
+       
+    </head>
+    <body>
+
+
+         <!-- Navbar -->
+      {% include 'nav.html' %}
+     
+      <!-- End Navbar -->
+       {% block hero %}{% endblock %}
+       {% block main %}{% endblock %}
+       {% block footer %}{% endblock %}
+
+       <!--Experience Zimbabwe-->
+       {% block tourism %}{% endblock %}
+       {% block map %}{% endblock %}
+
+       <!--Events-->
+       {% block schedule %}{% endblock %}
+       {% block live %}{% endblock %}
+
+       <!--Exhibits-->
+       {% block culture %}{% endblock %}
+       {% block musicdance %}{% endblock %}
+       {% block interactive %}{% endblock %}
+
+       <!--Opportunities-->
+       {% block investment %}{% endblock %}
+       {% block industry %}{% endblock %}
+       {% block partnerships %}{% endblock %}
+
+       <!--===Shop==-->
+       {% block shop %}{% endblock %}
+       {% block details %}{% endblock %}
+
+       <!--===Contact===-->
+       {% block contact %}{% endblock %}
+
+       <!--===News==-->
+       {% block news %}{% endblock %}
+
+       <!--===Our Future===-->
+       {% block future %}{% endblock %}
+       
+       
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+        {% include 'scripts.html' %}
+        
+    </body>
+</html>

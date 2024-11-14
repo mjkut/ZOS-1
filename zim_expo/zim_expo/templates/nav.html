@@ -1,0 +1,60 @@
+{% load static %}
+
+
+        <!--================Header Area =================-->
+        <header class="header_area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="#"><img src="{% static 'assets/imagelogo.jpeg' %}" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="{% url 'index'%}">Home</a></li> 
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience Zimbabwe</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/tourism/">Tourism Highlights</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/map/">Map</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cultural Exhibits</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/art_craft/">Art &amp; Craft</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/music/">Music &amp; Dance</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/interactive/">Interactive Media</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Economic Opportunities</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="/investment/">Investment</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/industries/">Key Industries</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/partnerships/">Business Partnerships</a></li>
+                                </ul>
+                            </li> 
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events &amp; Live Streams</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="{% url 'schedule' %}">Expo Event Schedule</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/live_streaming/">Live Streaming</a></li>
+                                  <!--  <li class="nav-item"><a class="nav-link" href="#">Event Highlights &amp; Archives</a></li> -->
+                                </ul>
+                            </li> 
+                            <li class="nav-item"><a class="nav-link" href="/future/">Our Future</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/news/">News</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/products/">Shop</a></li>
+                            
+                        </ul>
+                    </div> 
+                </nav>
+            </div>
+        </header>
+        <!--================Header Area =================-->

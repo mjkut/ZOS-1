@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block musicdance %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Music and Dance</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Music/Dance</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+
+
+        <div class="containers">
+            <!-- Header -->
+            <div class="headers">
+                <h1>Interactive Media at Zimbabwe's Pavilion</h1>
+                <p>Explore cutting-edge technologies that bring Zimbabwe to life at Expo 2025</p>
+            </div>
+    
+            <!-- Overview Section -->
+            <div class="content-section">
+                <h2>Experience Technology Like Never Before</h2>
+                <p>Zimbabwe’s Pavilion at Expo 2025 will showcase innovative technologies that will immerse you in the heart of Zimbabwe's vibrant culture, trade opportunities, and adventurous spirit. Our interactive media offerings will take you on a virtual journey, allowing you to explore Zimbabwe's hospitality, trade, investment opportunities, and exciting adventure activities in a whole new way.</p>
+            </div>
+    
+            <!-- Tech Features Section -->
+            <div class="content-section">
+                <h2>Available Technologies</h2>
+                <div class="tech-grid">
+                    <!-- 9D Chairs -->
+                    <div class="tech-card">
+                        <h3>9D Chairs</h3>
+                        <img src="{% static 'assets/img/9d.avif' %}" alt="9D Chair">
+                        <p>Experience Zimbabwe’s adventure activities like never before with our 9D chairs. Feel the thrill of safaris, hiking, and more through motion, sound, and visuals that create a fully immersive experience.</p>
+                    </div>
+    
+                    <!-- Virtual Reality -->
+                    <div class="tech-card">
+                        <h3>Virtual Reality (VR)</h3>
+                        <img src="{% static 'assets/img/vr.avif' %}" alt="Virtual Reality Experience">
+                        <p>Step into the virtual world of Zimbabwe through our state-of-the-art VR headsets. Visit the majestic Victoria Falls, explore cultural landmarks, and discover trade opportunities with a few simple movements.</p>
+                    </div>
+    
+                    <!-- Interactive Screens -->
+                    <div class="tech-card">
+                        <h3>Interactive Screens</h3>
+                        <img src="{% static 'assets/img/screen.avif' %}" alt="Interactive Screen">
+                        <p>Engage with Zimbabwe’s diverse offerings on our interactive touchscreens. Discover more about Zimbabwe's culture, trade and investment opportunities, and plan your visit with ease.</p>
+                    </div>
+    
+                    <!-- Multi-touch Screen at Info Desk -->
+                    <div class="tech-card">
+                        <h3>Multi-touch Screen at the Information Desk</h3>
+                        <img src="{% static 'assets/img/multi.jpg' %}" alt="Multi-touch Screen">
+                        <p>Get personalized information at the information desk using our multi-touch screen technology. Explore details on investment opportunities, tourism, and more with ease.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Call to Action -->
+            <div class="cta">
+                <p>Get ready to experience the best of Zimbabwe’s offerings. Join us at Expo 2025 and let technology take you on an unforgettable journey.</p>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <h2>Ask the Zimbabwe Chatbot!</h2>
+            <div id="chatDisplay" class="chat-display"></div>
+    
+            <!-- Input area -->
+            <div class="chat-input">
+                <input type="text" id="questionInput" placeholder="Ask about Zimbabwe..." />
+                <button id="askButton">Ask</button>
+            </div>
+        </div>
+       
+
+{% endblock %}

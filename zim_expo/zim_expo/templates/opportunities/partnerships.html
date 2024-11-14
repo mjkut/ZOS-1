@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block partnerships %}
+
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">Explore Available Opportunities</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Partner With Us</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+         <!--================Breadcrumb Area =================-->
+
+         <br>
+         <br>
+         
+        <div class="opportunities">
+            {% for opportunity in opportunities %}
+            <div class="opportunity-card">
+                <h3>{{ opportunity.job_title }}</h3>
+                <p><strong>Description:</strong> {{ opportunity.job_description }}</p>
+                <p><strong>Qualifications:</strong> {{ opportunity.qualifications }}</p>
+                <p><strong>Contact:</strong> {{ opportunity.contact_details }}</p>
+                <p><strong>Date Posted:</strong> {{ opportunity.date_posted }}</p>
+            </div>
+            {% empty %}
+            <p>No partnership opportunities available.</p>
+            {% endfor %}
+        </div>
+
+        
+
+       
+
+{% endblock %}
